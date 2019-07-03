@@ -349,6 +349,14 @@ body {
         font-family: $fontB;
     }
 
+    &__text {
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 135%;
+        color: #474747;
+        font-family: $fontA;
+    }
+
     &__space {
         display: block;
         height: 50px;

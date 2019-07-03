@@ -3668,6 +3668,14 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
+.page__text {
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 135%;
+  color: #474747;
+  font-family: "Montserrat", sans-serif;
+}
+
 .page__space {
   display: block;
   height: 50px;
