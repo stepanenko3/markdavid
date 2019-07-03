@@ -4,6 +4,9 @@
 @import 'main/utilities';
 @import 'main/normalize';
 
+$fontA: 'Montserrat', sans-serif;
+$fontB: 'Fira Sans', sans-serif;
+
 @mixin placeholder {
     &::-webkit-input-placeholder {
         @content;
@@ -64,14 +67,12 @@ body {
     width: 100%;
     max-width: 100%;
     overflow: hidden;
+    font-family: $fontA;
 }
 
 // Grid mixins
 @import 'main/grid';
 @import 'main/utilities/flex';
-
-$fontA: 'Montserrat', sans-serif;
-$fontB: 'Fira Sans', sans-serif;
 
 .header {
     display: block;
@@ -263,6 +264,68 @@ $fontB: 'Fira Sans', sans-serif;
 }
 
 .page {
+    &404 {
+        position: relative;
+        padding: 20px 0 50px;
+
+        &__bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            font-family: $fontA;
+            font-weight: bold;
+            font-size: 220px;
+            line-height: 306px;
+            color: #FFFFFF;
+            text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.08);
+            z-index: 1;
+        }
+
+        &__title {
+            position: relative;
+            z-index: 2;
+            font-weight: 600;
+            font-size: 185px;
+            line-height: 226px;
+            color: #42A0EB;
+            text-align: center;
+            font-family: $fontA;
+        }
+
+        &__subtitle {
+            position: relative;
+            z-index: 2;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #42A0EB;
+            font-family: $fontA;
+        }
+
+        &__button {
+            background: #EB4C42;
+            border-radius: 3px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            font-family: $fontA;
+            padding: 14px 50px;
+            margin-top: 50px;
+        }
+    }
+
     &--gray {
         background: rgba(66, 160, 235, 0.02);
     }
@@ -724,7 +787,7 @@ $fontB: 'Fira Sans', sans-serif;
 
         a {
             transition: all .3s;
-            
+
             &:hover {
                 color: #42a0eb;
             }
