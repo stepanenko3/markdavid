@@ -4474,3 +4474,47 @@ body {
 .seo-text--open .seo-text__toggle:after {
   display: none;
 }
+
+.product-carousel-container {
+  padding-left: 100px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.product-carousel .owl-dots {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  height: 100%;
+  width: 85px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product-carousel .owl-dots .owl-dot {
+  height: 14.27% !important;
+  display: block;
+  width: 100%;
+  margin-bottom: 3px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background: no-repeat center / contain;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.product-carousel .owl-dots .owl-dot.active {
+  border-color: rgba(249, 111, 20, 0.14);
+}
+
+.product-carousel .owl-dots .owl-dot:last-child {
+  margin-bottom: 0;
+}
