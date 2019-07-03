@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/icomoon/style.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600,700|Montserrat:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
@@ -26,7 +27,7 @@
                 <form method="GET" action="/search" class="header-search">
                     <input type="text" name="s" placeholder="Поиск..." />
                     <button type="submit">
-                        <img src="/assets/img/search.svg" />
+                        <span class="icon-search"></span>
                     </button>
                 </form>
     
@@ -209,11 +210,7 @@
                                 <div class="product__label">
                                     Аренда
                                 </div>
-                                <div class="product__favorite">
-                                    <svg width="26" height="22">
-                                        <use xlink:href="#favorite-icon" />
-                                    </svg>
-                                </div>
+                                <div class="product__favorite product__favorite--active"></div>
                             </div>
     
                             <div class="product__category">
@@ -242,11 +239,7 @@
                                 <div class="product__label">
                                     Аренда
                                 </div>
-                                <div class="product__favorite">
-                                    <svg width="26" height="22">
-                                        <use xlink:href="#favorite-icon" />
-                                    </svg>
-                                </div>
+                                <div class="product__favorite"></div>
                             </div>
     
                             <div class="product__category">
@@ -275,11 +268,7 @@
                                 <div class="product__label">
                                     Аренда
                                 </div>
-                                <div class="product__favorite">
-                                    <svg width="26" height="22">
-                                        <use xlink:href="#favorite-icon" />
-                                    </svg>
-                                </div>
+                                <div class="product__favorite"></div>
                             </div>
     
                             <div class="product__category">
@@ -308,11 +297,7 @@
                                 <div class="product__label">
                                     Аренда
                                 </div>
-                                <div class="product__favorite">
-                                    <svg width="26" height="22">
-                                        <use xlink:href="#favorite-icon" />
-                                    </svg>
-                                </div>
+                                <div class="product__favorite"></div>
                             </div>
     
                             <div class="product__category">
@@ -341,11 +326,7 @@
                                 <div class="product__label">
                                     Аренда
                                 </div>
-                                <div class="product__favorite">
-                                    <svg width="26" height="22">
-                                        <use xlink:href="#favorite-icon" />
-                                    </svg>
-                                </div>
+                                <div class="product__favorite"></div>
                             </div>
     
                             <div class="product__category">
@@ -374,11 +355,7 @@
                                 <div class="product__label">
                                     Аренда
                                 </div>
-                                <div class="product__favorite">
-                                    <svg width="26" height="22">
-                                        <use xlink:href="#favorite-icon" />
-                                    </svg>
-                                </div>
+                                <div class="product__favorite"></div>
                             </div>
     
                             <div class="product__category">
@@ -407,11 +384,7 @@
                                 <div class="product__label">
                                     Аренда
                                 </div>
-                                <div class="product__favorite">
-                                    <svg width="26" height="22">
-                                        <use xlink:href="#favorite-icon" />
-                                    </svg>
-                                </div>
+                                <div class="product__favorite"></div>
                             </div>
     
                             <div class="product__category">
@@ -440,11 +413,7 @@
                                 <div class="product__label">
                                     Аренда
                                 </div>
-                                <div class="product__favorite">
-                                    <svg width="26" height="22">
-                                        <use xlink:href="#favorite-icon" />
-                                    </svg>
-                                </div>
+                                <div class="product__favorite"></div>
                             </div>
     
                             <div class="product__category">
@@ -695,13 +664,13 @@
                 nav: true,
                 dots: false,
                 margin: 30,
-                navText: ['<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke-width="2"/></svg>', '<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke-width="2"/></svg>']
+                navText: ['<span class="icon-angle-left"></span>', '<span class="icon-angle-right"></span>']
             });
             $('.carousel02').owlCarousel({
                 items: 4,
                 nav: true,
                 dots: false,
-                navText: ['<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke-width="2"/></svg>', '<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke-width="2"/></svg>']
+                navText: ['<span class="icon-angle-left"></span>', '<span class="icon-angle-right"></span>']
             });
         });
     </script>
