@@ -4001,10 +4001,6 @@ body {
   font-family: 'icomoon' !important;
 }
 
-.product__favorite--active {
-  color: #42A0EB;
-}
-
 .product__favorite--active:before {
   content: '\e908';
 }
@@ -4819,4 +4815,13 @@ body {
 
 .bread li:last-child a:after {
   display: none;
+}
+
+.carousel03 .product {
+  padding-bottom: 85px;
+}
+
+.carousel03 .product__hover {
+  bottom: 0;
+  top: initial;
 }

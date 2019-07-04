@@ -613,8 +613,6 @@ body {
         }
 
         &--active {
-            color: #42A0EB;
-
             &:before {
                 content: '\e908';
             }
@@ -1236,5 +1234,14 @@ body {
                 display: none;
             }
         }
+    }
+}
+
+.carousel03 .product {
+    padding-bottom: 85px;
+
+    &__hover {
+        bottom: 0;
+        top: initial;
     }
 }

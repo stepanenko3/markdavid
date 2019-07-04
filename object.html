@@ -205,33 +205,139 @@
                     Горячие предложения
                 </div>
     
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="product">
-                            <div class="product__image" style="background-image: url(/assets/img/block02.png)">
-                                <div class="product__label">
-                                    Аренда
-                                </div>
-                                <div class="product__favorite product__favorite--active"></div>
+                <div class="carousel03 owl-carousel">
+                    <div class="product">
+                        <div class="product__image" style="background-image: url(/assets/img/block02.png)">
+                            <div class="product__label">
+                                Аренда
                             </div>
-    
-                            <div class="product__category">
-                                Днепровский район
-                            </div>
-    
-                            <div class="product__title">
-                                Рентабельность - 35% годовых
-                                Срок проекта - 1,5 года
-                            </div>
-    
-                            <div class="product__price">
-                                1 500 000 <span>грн</span>
-                            </div>
+                            <div class="product__favorite product__favorite--active"></div>
+                        </div>
 
-                            <div class="product__hover">
-                                <div class="product__action">
-                                    Смотреть больше
-                                </div>
+                        <div class="product__category">
+                            Днепровский район
+                        </div>
+
+                        <div class="product__title">
+                            Рентабельность - 35% годовых
+                            Срок проекта - 1,5 года
+                        </div>
+
+                        <div class="product__price">
+                            1 500 000 <span>грн</span>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__action">
+                                Смотреть больше
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__image" style="background-image: url(/assets/img/block02.png)">
+                            <div class="product__label">
+                                Аренда
+                            </div>
+                            <div class="product__favorite product__favorite--active"></div>
+                        </div>
+
+                        <div class="product__category">
+                            Днепровский район
+                        </div>
+
+                        <div class="product__title">
+                            Рентабельность - 35% годовых
+                            Срок проекта - 1,5 года
+                        </div>
+
+                        <div class="product__price">
+                            1 500 000 <span>грн</span>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__action">
+                                Смотреть больше
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__image" style="background-image: url(/assets/img/block02.png)">
+                            <div class="product__label">
+                                Аренда
+                            </div>
+                            <div class="product__favorite product__favorite--active"></div>
+                        </div>
+
+                        <div class="product__category">
+                            Днепровский район
+                        </div>
+
+                        <div class="product__title">
+                            Рентабельность - 35% годовых
+                            Срок проекта - 1,5 года
+                        </div>
+
+                        <div class="product__price">
+                            1 500 000 <span>грн</span>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__action">
+                                Смотреть больше
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__image" style="background-image: url(/assets/img/block02.png)">
+                            <div class="product__label">
+                                Аренда
+                            </div>
+                            <div class="product__favorite product__favorite--active"></div>
+                        </div>
+
+                        <div class="product__category">
+                            Днепровский район
+                        </div>
+
+                        <div class="product__title">
+                            Рентабельность - 35% годовых
+                            Срок проекта - 1,5 года
+                        </div>
+
+                        <div class="product__price">
+                            1 500 000 <span>грн</span>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__action">
+                                Смотреть больше
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__image" style="background-image: url(/assets/img/block02.png)">
+                            <div class="product__label">
+                                Аренда
+                            </div>
+                            <div class="product__favorite product__favorite--active"></div>
+                        </div>
+
+                        <div class="product__category">
+                            Днепровский район
+                        </div>
+
+                        <div class="product__title">
+                            Рентабельность - 35% годовых
+                            Срок проекта - 1,5 года
+                        </div>
+
+                        <div class="product__price">
+                            1 500 000 <span>грн</span>
+                        </div>
+
+                        <div class="product__hover">
+                            <div class="product__action">
+                                Смотреть больше
                             </div>
                         </div>
                     </div>
@@ -312,25 +418,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script>
+        function initMap() {
+            var myLatLng = {lat: 50.450870, lng: 30.510636};
 
-            function initMap() {
-              var myLatLng = {lat: -25.363, lng: 131.044};
-      
-              var map = new google.maps.Map(document.getElementById('product-map'), {
-                zoom: 4,
+            var map = new google.maps.Map(document.getElementById('product-map'), {
+                zoom: 15,
                 center: myLatLng
-              });
-      
-              var marker = new google.maps.Marker({
+            });
+
+            var marker = new google.maps.Marker({
                 position: myLatLng,
                 map: map,
                 title: 'Hello World!'
-              });
-            }
-          </script>
-          <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh7FL9-asA3dXL1qA7FX9lYE2nlzCMO0c&callback=initMap">
-          </script>
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh7FL9-asA3dXL1qA7FX9lYE2nlzCMO0c&callback=initMap"></script>
 
     <script>
         function toggleSeoText() {
@@ -343,13 +446,20 @@
                 nav: true,
                 dots: false,
                 margin: 30,
-                navText: ['<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke-width="2"/></svg>', '<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke-width="2"/></svg>']
+                navText: ['<span class="icon-angle-left"></span>', '<span class="icon-angle-right"></span>']
             });
             $('.carousel02').owlCarousel({
                 items: 4,
                 nav: true,
                 dots: false,
-                navText: ['<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke-width="2"/></svg>', '<svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke-width="2"/></svg>']
+                navText: ['<span class="icon-angle-left"></span>', '<span class="icon-angle-right"></span>']
+            });
+            $('.carousel03').owlCarousel({
+                items: 4,
+                nav: true,
+                dots: false,
+                margin: 30,
+                navText: ['<span class="icon-angle-left"></span>', '<span class="icon-angle-right"></span>']
             });
 
             $(".product-carousel").owlCarousel({
