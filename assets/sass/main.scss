@@ -1245,3 +1245,39 @@ body {
         top: initial;
     }
 }
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    li {
+        list-style: none;
+
+        a, span {
+            background: #FFFFFF;
+            border: 1px solid rgba(66, 160, 235, 0.3);
+            box-sizing: border-box;
+            border-radius: 3px;
+            margin: 6px;font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #42A0EB;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s;
+        }
+
+        &.active, &:hover {
+            a, span {
+                background: #42A0EB;
+                box-shadow: 0px 0px 12px rgba(66, 160, 235, 0.6);
+                color: #fff;
+            }
+        }
+    }
+}
