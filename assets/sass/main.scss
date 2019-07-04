@@ -705,6 +705,77 @@ body {
     margin-bottom: 30px;
     padding-top: 5px;
 
+    &-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 25px;
+
+        &__title {
+            display: block;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #3F3F3F;
+            margin-bottom: 15px;
+        }
+
+        &__link {
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 21px;
+            color: #474747;
+            transition: all .3s;
+
+            &:hover {
+                color: #42A0EB;
+            }
+        }
+
+        &__social {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0 -10px;
+
+            a {
+                margin: 0 10px;
+                transition: all .3s;
+
+                &:hover {
+                    opacity: 0.8;
+                    transform: translate3d(0, -3px, 0);
+                }
+            }
+        }
+    }
+
+    &-p {
+        &__image {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #474747;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 20px;
+
+            span {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 1.34;
+                letter-spacing: -0.01em;
+                color: #42A0EB;
+                margin-left: 15px;
+            }
+        }
+    }
+
     &__image {
         width: 250px;
         height: 250px;

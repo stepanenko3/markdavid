@@ -4093,6 +4093,104 @@ body * {
   padding-top: 5px;
 }
 
+.realtor-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.realtor-info__title {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3F3F3F;
+  margin-bottom: 15px;
+}
+
+.realtor-info__link {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #474747;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.realtor-info__link:hover {
+  color: #42A0EB;
+}
+
+.realtor-info__social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 -10px;
+}
+
+.realtor-info__social a {
+  margin: 0 10px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.realtor-info__social a:hover {
+  opacity: 0.8;
+  -webkit-transform: translate3d(0, -3px, 0);
+          transform: translate3d(0, -3px, 0);
+}
+
+.realtor-p__image {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.realtor-p__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #474747;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.realtor-p__title span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.34;
+  letter-spacing: -0.01em;
+  color: #42A0EB;
+  margin-left: 15px;
+}
+
 .realtor__image {
   width: 250px;
   height: 250px;
