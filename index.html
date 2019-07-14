@@ -74,6 +74,9 @@
                     <a href="/">Каталог</a>
                     <a href="/">Каталог</a>
                     <a href="/">Каталог</a>
+                    <a class="mobile" href="/">Контакты</a>
+                    <a class="mobile" href="/">Меню</a>
+                    <a class="mobile" href="/"><i class="icon-search"></i></a>
                 </div>
             </div>
         </div>
@@ -534,37 +537,37 @@
 
             <div class="row">
                     <div class="col-md-3">
-                        <div class="news">
-                            <div class="news__image" style="background-image: url(/assets/img/block02.png)"></div>
-                            <div class="news__date">09 мая 2019</div>
-                            <div class="news__title">
+                        <div class="news-item">
+                            <div class="news-item__image" style="background-image: url(/assets/img/block02.png)"></div>
+                            <div class="news-item__date">09 мая 2019</div>
+                            <div class="news-item__title">
                                 В Украине изменятся требования к убежищам и укрытиям
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="news">
-                            <div class="news__image" style="background-image: url(/assets/img/block02.png)"></div>
-                            <div class="news__date">09 мая 2019</div>
-                            <div class="news__title">
+                        <div class="news-item">
+                            <div class="news-item__image" style="background-image: url(/assets/img/block02.png)"></div>
+                            <div class="news-item__date">09 мая 2019</div>
+                            <div class="news-item__title">
                                 В Украине изменятся требования к убежищам и укрытиям
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="news">
-                            <div class="news__image" style="background-image: url(/assets/img/block02.png)"></div>
-                            <div class="news__date">09 мая 2019</div>
-                            <div class="news__title">
+                        <div class="news-item">
+                            <div class="news-item__image" style="background-image: url(/assets/img/block02.png)"></div>
+                            <div class="news-item__date">09 мая 2019</div>
+                            <div class="news-item__title">
                                 В Украине изменятся требования к убежищам и укрытиям
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="news">
-                            <div class="news__image" style="background-image: url(/assets/img/block02.png)"></div>
-                            <div class="news__date">09 мая 2019</div>
-                            <div class="news__title">
+                        <div class="news-item">
+                            <div class="news-item__image" style="background-image: url(/assets/img/block02.png)"></div>
+                            <div class="news-item__date">09 мая 2019</div>
+                            <div class="news-item__title">
                                 В Украине изменятся требования к убежищам и укрытиям
                             </div>
                         </div>
@@ -660,17 +663,37 @@
 
         $(document).ready(function () {
             $('.carousel01').owlCarousel({
-                items: 2,
                 nav: true,
                 dots: false,
                 margin: 30,
-                navText: ['<span class="icon-angle-left"></span>', '<span class="icon-angle-right"></span>']
+                navText: ['<span class="icon-angle-left"></span>', '<span class="icon-angle-right"></span>'],
+                responsive : {
+                    0: {
+                        items: 1,
+                    },
+                    480 : {
+                        items: 1,
+                    },
+                    768 : {
+                        items: 2,
+                    }
+                }
             });
             $('.carousel02').owlCarousel({
-                items: 4,
                 nav: true,
                 dots: false,
-                navText: ['<span class="icon-angle-left"></span>', '<span class="icon-angle-right"></span>']
+                navText: ['<span class="icon-angle-left"></span>', '<span class="icon-angle-right"></span>'],
+                responsive : {
+                    0: {
+                        items: 1,
+                    },
+                    480 : {
+                        items: 2,
+                    },
+                    768 : {
+                        items: 4,
+                    }
+                }
             });
         });
     </script>
