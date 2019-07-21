@@ -1098,6 +1098,10 @@ body {
             line-height: 1.2;
             color: rgba(81, 81, 81, 0.8);
             margin-bottom: 7px;
+
+            @media(max-width: 768px) {
+                text-align: center;
+            }
         }
 
         &__item {
@@ -1107,6 +1111,10 @@ body {
             display: flex;
             align-items: center;
             color: #474747;
+
+            @media(max-width: 768px) {
+                justify-content: center;
+            }
             
             transition: all .3s;
 
